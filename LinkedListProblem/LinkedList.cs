@@ -72,6 +72,18 @@ namespace LinkedListProblem
             prev.next = newestNode;
             return this.head;
         }
+        //UC4
+        public void RemoveFirstElement()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            this.head = this.head.next;
+
+            Console.WriteLine("First element is deleted");
+        }
+
         public void Display()
         {
             Node temp = this.head;
