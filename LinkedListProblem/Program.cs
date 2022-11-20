@@ -7,7 +7,7 @@
             Console.WriteLine("Linked List Operation:");
             LinkedList list = new LinkedList();
 
-            Console.WriteLine("Select \n1.Create LinkedList \n 2.Add \n 3.Insert At Particular Position \n 4.DeleteFirstNode \n 5.DeleteLastNode" );
+            Console.WriteLine("Select \n1.Create LinkedList \n 2.Add \n 3.Insert At Particular Position \n 4.DeleteFirstNode \n 5.DeleteLastNode \n 6.Search" );
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -42,6 +42,14 @@
                     list.Add(30);
                     list.Add(70);
                     list.RemoveLastElement();
+                    list.Display();
+                    break;
+                case 6:
+                    list.Add(56);
+                    list.Add(30);
+                    list.Add(70);
+                    int find = list.Search(30);
+                    Console.WriteLine("The Position of Node with value 30 in LinkedList is " + find);
                     list.Display();
                     break;
 
