@@ -7,7 +7,7 @@
             Console.WriteLine("Linked List Operation:");
             LinkedList list = new LinkedList();
 
-            Console.WriteLine("Select \n1.Create LinkedList \n 2.Add \n 3.Insert At Particular Position \n 4.DeleteFirstNode" );
+            Console.WriteLine("Select \n1.Create LinkedList \n 2.Add \n 3.Insert At Particular Position \n 4.DeleteFirstNode \n 5.DeleteLastNode" );
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -35,6 +35,13 @@
                     list.Add(30);
                     list.Add(70);
                     list.RemoveFirstElement();
+                    list.Display();
+                    break;
+                case 5:
+                    list.Add(56);
+                    list.Add(30);
+                    list.Add(70);
+                    list.RemoveLastElement();
                     list.Display();
                     break;
 
